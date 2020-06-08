@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>종합 음원 차트</title>
+        <style>
+            #topMenu {
+                display: inline-block;
+                height: 40px;
+                width: 100%;
+                background-color: #2d2d2d;
+            }
+            #topMenu ul {
+                float: left;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            #topMenu ul li {
+                display: inline-block;
+                padding: 0;
+                list-style: none;
+                color: white;
+                line-height: 40px;
+                /*vertical-align: middle;*/
+                text-align: center;
+            }
+            #topMenu .menuLink {
+                text-decoration: none;
+                color: white;
+                display: block;
+                width: 150px;
+                font-size: 15px;
+                font-weight: bold;
+                font-family: "Trebuchet MS", Dotum, Arial;
+            }
+            #topMenu .menuLink:hover {
+                color: #dd7777;
+                background-color: #4d4d4d;
+            }
+            .table1 {
+                border-collapse: collapse;
+                text-align: left;
+                line-height: 1.5;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                margin: 20px 0px;
+            }
+            .table1 th {
+                width: 150px;
+                padding: 10px;
+                font-weight: bold;
+                vertical-align: top;
+            }
+            .table1 td {
+                width: 350px;
+                padding: 10px;
+                vertical-align: top;
+            }
+            .table1 .even {
+                background: #efefef;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1 style="text-align: center;">REAL CHART</h1>
+        <nav id="topMenu" >
+            <ul>
+                <li><a class="menuLink" href="project1.html">Home</a></li>
+                <li><a class="menuLink" href="project_melon.html">Melon</a></li>
+                <li><a class="menuLink" href="test.html">Genie</a></li>
+                <li><a class="menuLink" href="#">Flo</a></li>
+                <li><a class="menuLink" href="#">Vibe</a></li>
+            </ul>
+        </nav>
+        <p id="demo"></p>
+        <script type="text/javascript" src="melondata.json"></script>
+        <script type="text/javascript" src="test.js"></script>
+    </body>
+</html>
