@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>종합 음원 차트</title>
+    <style>
+        * {
+            font-family: "Trebuchet MS", "맑은 고딕", Arial;
+            padding: 0px;
+            margin: 0px;
+        }
+        #div2 {
+            background-color: white;
+            width: 100%;
+            height: 10%;
+            position: fixed;
+        }
+        h1 {
+            padding: 15px;
+            text-align: center;
+        }
+        #topMenu {
+            position: fixed;
+            display: inline-block;
+            height: 50px;
+            width: 100%;
+            background-color: #2d2d2d;
+        }
+        #topMenu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        #topMenu ul li {
+            display: inline-block;
+            padding: 0;
+            list-style: none;
+            color: white;
+            line-height: 50px;
+            /*vertical-align: middle;*/
+            
+        }
+        #topMenu .menuLink {
+            text-decoration: none;
+            color: white;
+            display: block;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #topMenu .menuLink:hover {
+            color: #dd7777;
+            background-color: #4d4d4d;
+        }
+        h3 {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            z-index: -1;
+        }
+        #div1 {
+            padding: 30px 10%;
+        }
+        .table1 {
+            border-collapse: collapse;
+            text-align: left;
+            line-height: 1.5;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            margin: 160px 0px 0px 0px;
+        }
+        .table_menu {
+            background-color: #dd7777;
+            color: white;
+        }
+        .table1 th {
+            padding: 10px;
+            font-weight: bold;
+            vertical-align: center;
+            text-align: center;
+        }
+        .table1 td {
+            padding: 10px;
+            vertical-align: center;
+            text-align: center;
+        }
+        .table1 .even {
+            background: #efefef;
+        }
+        .rank_list {
+            width:10px;
+        }
+        #div4 {
+            width: 50px;
+            height: 100px;
+            left: 95%;
+            top: 70%;
+            right: 0;
+            position: fixed;
+        }
+        #div4 button {
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="div2">
+        <h1>REAL CHART</h1>
+    <div id="topMenu" >
+        <ul>
+            <li><a class="menuLink" href="mainchart1.ejs">Home</a></li>
+            <li><a class="menuLink" href="melonchart.ejs">Melon</a></li>
+            <li><a class="menuLink" href="geniechart.ejs">Genie</a></li>
+            <li><a class="menuLink" href="site.html">Site</a></li>
+        </ul>
+    </div>
+</div>
+    <h3>Melon Chart</h3>
+    <div id='div1'>
+        <table class='table1'>
+        <tr class='table_menu'>
+            <th width="50px">순위</th>
+            <th width="500px">곡명</th>
+            <th width="500px">가수</th>
+            <th width="500px">엘범명</th>
+        </tr>
+        <tbody id='rank_chart'>
+            <% var i =0;
+            melonlist.forEach(function(item, index){ 
+                if(i%2==0) { %>
+                    <tr class='even'>
+                        <td><%= item.ranking %></td>
+                        <td><%= item.title %></td>
+                        <td><%= item.singer %></td>
+                        <td><%= item.album %></td>            
+                    </tr>
+                    <%} else {%>
+                        <tr>
+                            <td><%= item.ranking %></td>
+                            <td><%= item.title %></td>
+                            <td><%= item.singer %></td>
+                            <td><%= item.album %></td>
+                        </tr>
+                    <%}
+                i++;
+                });%>
+        </tbody>
+    </table>
+</div>
+<div id="div5" width="100%" height="10px"></div>
+<div id="div4">
+    <a href="#div1"><button>▲</button></a>
+    <a href="#div5"><button>▼</button></a>
+</div>
+</body>
+</html>

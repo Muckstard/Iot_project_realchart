@@ -1,34 +1,66 @@
-data = [{"rank":1,"title":"에잇(Prod.&Feat. SUGA of BTS)","singer":"아이유","album":"에잇"},{"rank":2,"title":"사랑하게 될 줄 알았어","singer":"전미도","album":"슬기로운 의사생활 OST Part 11"},{"rank":3,"title":"아로하","singer":"조정석","album":"슬기로운 의사생활 OST Part 3"},{"rank":4,"title":"나비와 고양이 (feat.백현 (BAEKHYUN))","singer":"볼빨간사춘기","album":"사춘기집Ⅱ 꽃 본 나비"},{"rank":5,"title":"살짝 설렜어 (Nonstop)","singer":"오마이걸","album":"NONSTOP"},{"rank":6,"title":"좋은 사람 있으면 소개시켜줘","singer":"조이 (JOY)","album":"슬기로운 의사생활 OST Part 2"},{"rank":7,"title":"시작","singer":"가호 (Gaho)","album":"이태원 클라쓰 OST Part.2"},{"rank":8,"title":"처음처럼","singer":"엠씨더맥스 (M.C the MAX)","album":"CEREMONIA"},{"rank":9,"title":"Candy","singer":"백현 (BAEKHYUN)","album":"Delight - The 2nd Mini Album"},{"rank":10,"title":"화려하지 않은 고백","singer":"규현 (KYUHYUN)","album":"슬기로운 의사생활 OST Part 4"},{"rank":11,"title":"덤더럼(Dumhdurum)","singer":"Apink (에이핑크)","album":"LOOK"},{"rank":12,"title":"흔들리는 꽃들 속에서 네 샴푸향이 느껴진거야","singer":"장범준","album":"멜로가 체질 OST Part 3"},{"rank":13,"title":"그대 고운 내사랑","singer":"어반자카파","album":"슬기로운 의사생활 OST Part 5"},{"rank":14,"title":"ON","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":15,"title":"아무노래","singer":"지코 (ZICO)","album":"아무노래"},{"rank":16,"title":"Blueming","singer":"아이유","album":"Love poem"},{"rank":17,"title":"METEOR","singer":"창모 (CHANGMO)","album":"Boyhood"},{"rank":18,"title":"Dance Monkey","singer":"Tones And I","album":"The Kids Are Coming"},{"rank":19,"title":"Dolphin","singer":"오마이걸","album":"NONSTOP"},{"rank":20,"title":"작은 것들을 위한 시 (Boy With Luv) (Feat. Halsey)","singer":"방탄소년단","album":"MAP OF THE SOUL : PERSONA"},{"rank":21,"title":"내 눈물 모아","singer":"휘인 (Whee In)","album":"슬기로운 의사생활 OST Part 8"},{"rank":22,"title":"Happy","singer":"태연 (TAEYEON)","album":"Happy"},{"rank":23,"title":"그때 그 아인","singer":"김필","album":"이태원 클라쓰 OST Part.6"},{"rank":24,"title":"마음을 드려요","singer":"아이유","album":"사랑의 불시착 OST Part 11"},{"rank":25,"title":"Don't Start Now","singer":"Dua Lipa","album":"Future Nostalgia"},{"rank":26,"title":"돌덩이","singer":"하현우 (국카스텐)","album":"이태원 클라쓰 OST Part.3"},{"rank":27,"title":"Memories","singer":"Maroon 5","album":"Memories"},{"rank":28,"title":"너를 사랑하고 있어","singer":"백현 (BAEKHYUN)","album":"낭만닥터 김사부 2 OST Part.1"},{"rank":29,"title":"늦은 밤 너의 집 앞 골목길에서","singer":"노을","album":"늦은 밤 너의 집 앞 골목길에서"},{"rank":30,"title":"우리 만남이","singer":"폴킴","album":"정규 2집 '마음, 둘'"},{"rank":31,"title":"2002","singer":"Anne-Marie","album":"Speak Your Mind (Deluxe)"},{"rank":32,"title":"Psycho","singer":"Red Velvet (레드벨벳)","album":"‘The ReVe Festival’ Finale"},{"rank":33,"title":"어떻게 지내 (Prod. By VAN.C)","singer":"오반","album":"어떻게 지내"},{"rank":34,"title":"WANNABE","singer":"ITZY (있지)","album":"IT'z ME"},{"rank":35,"title":"반만","singer":"진민호","album":"반만"},{"rank":36,"title":"오늘도 빛나는 너에게 (To You My Light) (Feat.이라온)","singer":"마크툽 (MAKTUB)","album":"Red Moon : To You My Light"},{"rank":37,"title":"자나깨나 (Feat. 조이 of Red Velvet)","singer":"Crush","album":"homemade 1"},{"rank":38,"title":"취했나봐","singer":"황인욱","album":"취했나봐"},{"rank":39,"title":"모든 날, 모든 순간 (Every day, Every Moment)","singer":"폴킴","album":"`키스 먼저 할까요?` OST Part.3"},{"rank":40,"title":"Lonely Night","singer":"권진아","album":"슬기로운 의사생활 OST Part 1"},{"rank":41,"title":"어떻게 이별까지 사랑하겠어, 널 사랑하는 거지","singer":"AKMU (악동뮤지션)","album":"항해"},{"rank":42,"title":"00:00 (Zero O’Clock)","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":43,"title":"이제 나만 믿어요","singer":"임영웅","album":"내일은 미스터트롯 우승자 특전곡"},{"rank":44,"title":"Maniac","singer":"Conan Gray","album":"Maniac"},{"rank":45,"title":"Black Swan","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":46,"title":"품","singer":"볼빨간사춘기","album":"사춘기집Ⅱ 꽃 본 나비"},{"rank":47,"title":"우리 왜 헤어져야 해","singer":"신예영","album":"우리 왜 헤어져야 해"},{"rank":48,"title":"FIESTA","singer":"IZ*ONE (아이즈원)","album":"BLOOM*IZ"},{"rank":49,"title":"안녕","singer":"폴킴","album":"호텔 델루나 OST Part.10"},{"rank":50,"title":"Bungee","singer":"백현 (BAEKHYUN)","album":"Delight - The 2nd Mini Album"},{"rank":51,"title":"Stay Tonight","singer":"청하","album":"Stay Tonight"},{"rank":52,"title":"Love poem","singer":"아이유","album":"Love poem"},{"rank":53,"title":"친구","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":54,"title":"너에게 난, 나에게 넌","singer":"미도와 파라솔","album":"슬기로운 의사생활 OST Part 12"},{"rank":55,"title":"Stuck with U","singer":"Ariana GrandeJustin Bieber","album":"Stuck with U"},{"rank":56,"title":"밤이 깊었네 (Drama Ver.)","singer":"미도와 파라솔","album":"슬기로운 의사생활 OST Part 10"},{"rank":57,"title":"HIP","singer":"마마무 (Mamamoo)","album":"reality in BLACK"},{"rank":58,"title":"Paris In The Rain","singer":"Lauv","album":"I met you when I was 18. (the playlist)"},{"rank":59,"title":"Love Again","singer":"백현 (BAEKHYUN)","album":"Delight - The 2nd Mini Album"},{"rank":60,"title":"너에게 가는 이 길 위에서 (너.이.길)","singer":"백현 (BAEKHYUN)","album":"하이에나 OST Part.2"},{"rank":61,"title":"너를 그린 우주 (Insomnia2020) (Feat. 이라온)","singer":"마크툽 (MAKTUB)","album":"Red Moon : SUPERNOVA"},{"rank":62,"title":"Filter","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":63,"title":"찐이야","singer":"영탁","album":"내일은 미스터트롯 결승전 베스트"},{"rank":64,"title":"To Die For","singer":"Sam Smith","album":"To Die For"},{"rank":65,"title":"Moon","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":66,"title":"bad guy","singer":"Billie Eilish","album":"WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?"},{"rank":67,"title":"시차","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":68,"title":"어느 60대 노부부이야기","singer":"임영웅","album":"내일은 미스터트롯 트롯 에이드 베스트"},{"rank":69,"title":"봄날","singer":"방탄소년단","album":"YOU NEVER WALK ALONE"},{"rank":70,"title":"Inner Child","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":71,"title":"Underwater","singer":"백현 (BAEKHYUN)","album":"Delight - The 2nd Mini Album"},{"rank":72,"title":"We are Bulletproof : the Eternal","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":73,"title":"너를 만나","singer":"폴킴","album":"너를 만나"},{"rank":74,"title":"Painkiller","singer":"Ruel","album":"Painkiller"},{"rank":75,"title":"Poppin'","singer":"백현 (BAEKHYUN)","album":"Delight - The 2nd Mini Album"},{"rank":76,"title":"다시 난, 여기","singer":"백예린","album":"사랑의 불시착 OST Part 4"},{"rank":77,"title":"R U Ridin'?","singer":"백현 (BAEKHYUN)","album":"Delight - The 2nd Mini Album"},{"rank":78,"title":"시든 꽃에 물을 주듯","singer":"HYNN (박혜원)","album":"시든 꽃에 물을 주듯"},{"rank":79,"title":"Louder than bombs","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":80,"title":"조금 취했어 (Prod. 2soo)","singer":"임재현","album":"조금 취했어"},{"rank":81,"title":"욱 (UGH!)","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":82,"title":"사랑이란 멜로는 없어","singer":"전상근","album":"사랑이란 멜로는 없어"},{"rank":83,"title":"Birthday","singer":"Anne-Marie","album":"Birthday"},{"rank":84,"title":"Obsession","singer":"EXO","album":"OBSESSION - The 6th Album"},{"rank":85,"title":"바램","singer":"임영웅","album":"내일은 미스터트롯 예선곡 베스트"},{"rank":86,"title":"넌 언제나","singer":"제이레빗(J Rabbit)","album":"슬기로운 의사생활 OST Part 7"},{"rank":87,"title":"시청 앞 지하철 역에서","singer":"곽진언","album":"슬기로운 의사생활 OST Part 6"},{"rank":88,"title":"영웅 (英雄; Kick It)","singer":"NCT 127","album":"NCT #127 Neo Zone - The 2nd Album"},{"rank":89,"title":"Interlude : Shadow","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":90,"title":"Yours (Feat. 이하이, 창모)","singer":"Raiden찬열 (CHANYEOL)","album":"Yours (Feat. 이하이, 창모)"},{"rank":91,"title":"깡","singer":"비","album":"MY LIFE愛"},{"rank":92,"title":"Ghost","singer":"백현 (BAEKHYUN)","album":"Delight - The 2nd Mini Album"},{"rank":93,"title":"사랑, 하자","singer":"수호 (SUHO)","album":"자화상 - The 1st Mini Album"},{"rank":94,"title":"Square (2017)","singer":"백예린","album":"Every letter I sent you."},{"rank":95,"title":"Outro : Ego","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":96,"title":"살아가는 거야","singer":"로이킴","album":"살아가는 거야"},{"rank":97,"title":"포장마차","singer":"황인욱","album":"포장마차"},{"rank":98,"title":"Respect","singer":"방탄소년단","album":"MAP OF THE SOUL : 7"},{"rank":99,"title":"넌 내가 보고 싶지 않나 봐","singer":"신예영","album":"넌 내가 보고 싶지 않나 봐"},{"rank":100,"title":"COUNTIN MY GUAP","singer":"창모 (CHANGMO)","album":"COUNTIN MY GUAP"}]
+const axios = require("axios");
+const cheerio = require("cheerio");
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+  host    :'203.234.62.143',
+  port : 3306,
+  user : 'daegyun',
+  password : '4886',
+  database:'realchart',
+  insecureAuth: true
+});
+connection.connect();
 
-var out = "<h3>" + "Melon Chart" + "</h3>" +
-"<table class='table1'>" + 
-"<tr>"+
-"<th>"+ "순위" + "</th>" +
-"<th>"+ "곡명" + "</th>" +
-"<th>"+ "가수" + "</th>" +
-"<th>"+ "엘범명" + "</th>" +
-"</tr>"+
-"<tbody id='rank_chart'>"
-
-for (var i = 0; i < data.length; i++) {
-  if (i%2 == 0) {
-    out+=
-      "<tr class='even'>"+
-      "<td>"+ data[i].rank + "</td>" +
-      "<td>"+ data[i].title + "</td>" +
-      "<td>"+ data[i].singer + "</td>" +
-      "<td>"+ data[i].album + "</td>" +
-      "</tr>"
+// axios를 활용해 AJAX로 HTML 문서를 가져오는 함수 구현
+async function getHTML() {
+  try {
+    return await axios.get("https://www.melon.com/chart/index.htm");
+  } catch (error) {
+    console.error(error);
   }
-  else {
-    out+=
-      "<tr>"+
-      "<td>"+ data[i].rank + "</td>" +
-      "<td>"+ data[i].title + "</td>" +
-      "<td>"+ data[i].singer + "</td>" +
-      "<td>"+ data[i].album + "</td>" +
-      "</tr>"
-  }
+  
 }
-out+= "</tbody>" + "</table>"
-document.getElementById('demo').innerHTML = out;
+var titleList = [];
+var fs = require('fs');
+const { connect } = require("http2");
+getHTML()
+  .then(html => {
+    
+    const $ = cheerio.load(html.data);
+    // tbody tr를 찾고 그 children 노드를 bodyList에 저장
+    const bodyList = $("tbody tr");
+
+    // bodyList를 순회하며 경로 내용 저장
+    bodyList.each(function(i, elem) {
+      titleList[i] = {
+        rank: i+1,
+        title: $(this).find("div.ellipsis.rank01 a").text(),
+        singer: $(this).find("span.checkEllipsis a").text(),
+        album: $(this).find("div.ellipsis.rank03 a").text()
+      };
+      
+    });
+    var jsonData = JSON.stringify(titleList);
+    fs.writeFileSync('melondata.json',jsonData); // json 파일로 저장
+    return titleList;
+  });
+
+var dataBuffer = fs.readFileSync('melondata.json'); // json 파일 읽기
+var dataJson = dataBuffer.toString();
+var data = JSON.parse(dataJson);
+console.log(data);
+for(var i =0; i< data.length; i++) {    // 데이터 변수에 저장
+  var rank = data[i].rank;
+  var title = data[i].title;
+  var singer = data[i].singer;
+  var album = data[i].album;
+  var sql = 'INSERT INTO realchart.melon VALUES(?,?,?,?)';  // DB에 전달할 쿼리문
+  var params = [rank, title, singer,album];//파라미터를 값들로 줌(배열로 생성)
+  
+  connection.query(sql,params,function(err,rows,fields) {
+  if(err) 
+    console.log(err);
+  })
+}
+
+connection.end();

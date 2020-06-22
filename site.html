@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>종합 음원 차트</title>
+    <style>
+        * {
+            font-family: "Trebuchet MS", "맑은 고딕", Arial;
+            padding: 0px;
+            margin: 0px;
+        }
+        #div2 {
+            background-color: white;
+            width: 100%;
+            height: 10%;
+            position: fixed;
+        }
+        h1 {
+            padding: 15px;
+            text-align: center;
+        }
+        #topMenu {
+            position: fixed;
+            display: inline-block;
+            height: 50px;
+            width: 100%;
+            background-color: #2d2d2d;
+        }
+        #topMenu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        #topMenu ul li {
+            display: inline-block;
+            padding: 0;
+            list-style: none;
+            color: white;
+            line-height: 50px;
+            /*vertical-align: middle;*/
+            
+        }
+        #topMenu .menuLink {
+            text-decoration: none;
+            color: white;
+            display: block;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #topMenu .menuLink:hover {
+            color: #dd7777;
+            background-color: #4d4d4d;
+        }
+        h3 {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            z-index: -1;
+        }
+        #div1 {
+            padding: 30px 10%;
+        }
+        .table1 {
+            border-collapse: collapse;
+            text-align: left;
+            line-height: 1.5;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            margin: 160px 0px 0px 0px;
+        }
+        .table_menu {
+            background-color: #dd7777;
+            color: white;
+        }
+        .table1 th {
+            padding: 10px;
+            font-weight: bold;
+            vertical-align: center;
+            text-align: center;
+        }
+        .table1 td {
+            padding: 10px;
+            vertical-align: center;
+            text-align: center;
+        }
+        .table1 .even {
+            background: #efefef;
+        }
+        .rank_list {
+            width:10px;
+        }
+        #div3 {
+            position: relative;
+            width: 500px;
+            height: 20%;
+            padding: 0px 0px 5% 40%;
+        }
+        button {
+            float: left;
+            margin-right: 8%;
+            padding: 5px;
+        }
+        .rotate {
+            overflow: hidden;
+            position: absolute;
+            border: solid 1px #cccccc;
+            width: 400px;
+            height: 300px;
+            margin-left: 200px;
+            margin-top: 30px;
+            border-radius: 30px;
+            float: left;
+        }
+        #box1{
+            margin-left: 23%;
+            margin-top: 10%;
+            z-index: -1;
+        }
+        #box2 {
+            margin-left: 51%;
+            margin-top: 10%;
+            z-index: -1;
+        }
+        #box3 {
+            margin: 33%  0px 5% 23%;
+        }
+        #box4 {
+            margin: 33%  0px 5% 51%;	
+        }
+        .rotate	 a {
+            display:block; 
+            width:400px; 
+            height:300px;  
+            perspective:600px;
+            text-align: center;
+        }   
+        .rotate	a .front {
+            transition: all 0.5s ease;
+            padding-top: 10px;
+        }
+        .rotate	a .back {
+            background-color: #aaaaaa;
+            height: 300px;
+            width: 400px;
+            top: 0;
+            position: absolute;
+            transform: rotateX(0deg) rotateY(-180deg);
+            transition: all 0.5s ease;
+            backface-visibility: hidden;
+            z-index: -1;
+            color: white;
+            padding-top: 50px;
+        }
+        .rotate	 a:hover .front {
+            transform: rotateX(0deg) rotateY(180deg);
+        }
+        .rotate	 a:hover .back {
+            transform: rotateX(0deg) rotateY(0deg); z-index: 1;
+        }
+        .boxtext {
+            font-size: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div id="div2">
+        <h1>REAL CHART</h1>
+    <div id="topMenu" >
+        <ul>
+            <li><a class="menuLink" href="mainchart1.ejs">Home</a></li>
+            <li><a class="menuLink" href="melonchart.ejs">Melon</a></li>
+            <li><a class="menuLink" href="geniechart.ejs">Genie</a></li>
+            <li><a class="menuLink" href="site.html">Site</a></li>
+        </ul>
+    </div>
+</div>
+    <div  class="rotate" id="box1">
+        <a href="https://www.melon.com/">
+          <div class="front">
+            <img src="./melon.PNG" width="280" height="280">
+          </div>
+          <div class="back">
+            <span class="boxtext">Melon</span><br><br>
+            멜론(MelOn)은 대한민국 최대의 유료 디지털 음원 <br>
+            스트리밍 서비스 사이트이며, 카카오 에서 운영한다. <br>
+            음악 차트 서비스 또한 제공하고 있다.
+          </div>
+        </a>
+    </div>
+    <div class="rotate" id="box2">
+        <a href="https://www.genie.co.kr/" target="_blank">
+          <div class="front">
+            <img src="./genie.PNG" width="280" height="280">
+          </div>
+          <div class="back">
+            <span class="boxtext">Genie</span><br><br>
+            지니뮤직(GENIE MUSIC)은 KT의 자회사로, <br>
+            음악 서비스 사업과 음악 콘텐츠 투자/유통을 <br>
+            전문으로 하는 회사이다.
+          </div>
+        </a>
+    </div>
+    <div class="rotate" id="box3">
+        <a href="https://www.music-flo.com/"  target="_blank">
+          <div class="front">
+            <img src="./flo.PNG" width="280" height="280">
+          </div>
+          <div class="back">
+            <span class="boxtext">Flo</span><br><br>
+            플로(FLO)는 "뮤직메이트" 라는 이름으로 서비스를 <br>
+            시작한 드림어스컴퍼니 (구 아이리버)에서 운영하는 <br>
+            유료 음원 서비스이다. NHN벅스로부터 벅스의 음원을 <br>
+            공급받아 서비스하고 있다.
+          </div>
+        </a>
+    </div>
+    <div class="rotate" id="box4">
+        <a href="https://vibe.naver.com/today"  target="_blank">
+          <div class="front">
+            <img src="./vibe.PNG" width="280" height="280">
+          </div>
+          <div class="back">
+            <span class="boxtext">Vibe</span><br><br>
+            바이브(VIBE)는 네이버가 출시한 음악 플랫폼이다. <br>
+            운영은 YG엔터테인먼트의 자회사 <br>
+            YG PLUS에서 맡고 있다.
+          </div>
+        </a>
+    </div>
