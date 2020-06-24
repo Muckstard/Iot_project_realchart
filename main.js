@@ -4,7 +4,13 @@ var http = require('http')
 var fs = require('fs');
 var ejs = require('ejs');
 var mysql = require('mysql');
- 
+var bodyParser = require('body-parser');
+var url = require('url');
+var qs = require('querystring');
+// pm2 start main.js --watch --ignore-watch="data/* sessions/*"  --no-daemon
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
+
 var connection = mysql.createConnection({
   host    :'203.234.62.143',
   port : 3306,
@@ -57,6 +63,30 @@ app.get('/mainchart1.ejs', (req, res) => {
         });
     }
     })
+});
+app.post("/mainchart12.ejs", function(req, res) {
+    var text = req.body.test;
+    res.json({ok:true});
+    fs.readFile('mainchart12.ejs','utf8',function(err,data) {
+        if(err) {
+          console.log('readFile err');
+        }
+        else{
+          //전제 데이타를 조회한 후 결과를 'results' 매개변수에 저장한다.
+          connection.query(`select * from realchart.real where title LIKE "%${text}%";`, function(err, rows){
+              if(err){
+                  console.log('error : ', err.message);
+              }else{                 
+                  //조회결과를 'prodList' 변수에 할당한 후 'list.html' 에 전달한다.
+                 // res.send( ejs.render(data, {
+                  //    reallist1 : rows }
+                  //));
+                  console.log(rows);
+                  //res.json(rows);
+              }
+          });
+      }
+      });
 });
 
 app.get('/mainchart2.ejs', (req, res) => {

@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>종합 음원 차트</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <style>
         * {
             font-family: "Trebuchet MS", "맑은 고딕", Arial;
@@ -160,23 +162,35 @@
             <li><a class="menuLink" href="geniechart.ejs">Genie</a></li>
             <li><a class="menuLink" href="site.html">Site</a></li>
         </ul>
-        <form action="" id="form1">
-            <label>search: </label>
-            <input list="music">
-            <datalist id="music">
-                <% var i =0;
-                reallist.forEach(function(item, index){      %>
-                <option value="<%= item.title %>"></option>
-                <%i++;
-                });%>
-            </datalist>
-        </form>
+        <input type="text" id="name" />
+        <input type="submit" id="OK"/>
+        
+        <script>
+            $("#OK").click(function(){      // OK 버튼 클릭하면
+                $.ajax({
+                    url: '/mainchart12.ejs',       // postTest 주소로
+                    async: true,            // 동기화 - 서버에서 반응이 올때까지 기다림
+                    type: 'POST',           // POST 방식으로
+                    data: {
+                        test: $("#name").val()  // 텍스트필드에 입력한 값을 test라는 이름으로 보냄
+                    },
+                    dataType: 'json',
+                    success: function(data) {   // POST 요청 성공 시
+                        alert("보내기 성공");
+                        window.location.href = "http://localhost:8000/melonchart.ejs";
+                    },
+                    error: function(err) {      // POST 요청 실패 시
+                        alert("보내기 실패 " + err);
+                    }
+                }); 
+            });
+        </script>
     </div>
 </div>
 
     <div id='div1'>
         <table class='table1'>
-            <caption>Real Chart</caption>
+            <caption><h1>Real Chart</h1></caption>
         <tr class='table_menu'>
             <th width="50px">순위</th>
             <th width="100px">점수</th>
@@ -195,7 +209,7 @@
                         <td><a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=<%= item.title %> <%= item.singer %>"
                             target="_blank"><%= item.title %></a></td>
                         <td><a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=<%= item.singer %>"
-                            target="_blank"><%= item.singer %></a></td>
+                            target="_blank" id="<%= item.singer %>"><%= item.singer %></a></td>
                         <td><%= item.album %></td>
                         <td><button class="btn" onclick="setColor('<%=i%>')";>♥</button></td>            
                     </tr>
@@ -228,5 +242,12 @@
     </li>
 </ul>
 </div>
+<script>
+    var x = new XMLHttpRequest();
+    x.addEventListener('load', function() {
+        var list = JSON.parse(x.responseText);
+        document.querySelector("#topMenu").innerHTML = "<li>" + list.singer + "</li>";
+    });
+</script>
 </body>
 </html>
