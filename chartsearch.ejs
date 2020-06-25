@@ -132,7 +132,7 @@
             font-size: 130%;
             font-weight: bold;
         }
-        #form1 {
+        #search {
             float: right;
             margin: 20px 10% 0 0;
         }
@@ -162,13 +162,14 @@
             <li><a class="menuLink" href="geniechart.ejs">Genie</a></li>
             <li><a class="menuLink" href="site.html">Site</a></li>
         </ul>
-        <input type="text" id="name" />
-        <input type="submit" id="OK"/>
-        
+        <div id="search">
+            <input type="text" id="name" />
+            <input type="submit" id="OK"/>
+        </div>
         <script>
             $("#OK").click(function(){      // OK 버튼 클릭하면
                 $.ajax({
-                    url: '/mainchart12.ejs',       // postTest 주소로
+                    url: '/chartsearch.ejs',       // 주소로
                     async: true,            // 동기화 - 서버에서 반응이 올때까지 기다림
                     type: 'POST',           // POST 방식으로
                     data: {
@@ -176,11 +177,10 @@
                     },
                     dataType: 'json',
                     success: function(data) {   // POST 요청 성공 시
-                        alert("보내기 성공");
-                        window.location.href = "http://localhost:8000/mainchart12.ejs";
+                        window.location.href = "chartsearch.ejs";
                     },
                     error: function(err) {      // POST 요청 실패 시
-                        alert("보내기 실패 " + err);
+                        alert("검색어를 다시 입력해 주세요." + err);
                     }
                 }); 
             });
@@ -190,7 +190,7 @@
 
     <div id='div1'>
         <table class='table1'>
-            <caption><h1>Real Chart</h1></caption>
+            <caption><h1>Chart Searching</h1></caption>
         <tr class='table_menu'>
             <th width="50px">순위</th>
             <th width="100px">점수</th>
@@ -201,40 +201,22 @@
         </tr>
         <tbody id='rank_chart'>
             <!-- reallist에 있는 데이터를 한 줄씩 가져와서 테이블 작성 -->
-            <tr><td>1</td></tr>
-            <script>
-                var x = new XMLHttpRequest();
-                x.addEventListener('load', function() {
-                    var list = JSON.parse(x.responseText);
-                    document.querySelector("#rank_chart").innerHTML = list.singer;
-                });
-            </script>
+            <% var i =0;
+            reallist1.forEach(function(item, index){      %>    
+                    <tr>
+                        <td><%= item.ranking %></td>
+                        <td><%= item.rating %></td>
+                        <td><a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=<%= item.title %> <%= item.singer %>"
+                            target="_blank"><%= item.title %></a></td>
+                        <td><a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=<%= item.singer %>"
+                            target="_blank" id="<%= item.singer %>"><%= item.singer %></a></td>
+                        <td><%= item.album %></td>
+                        <td><button class="btn" onclick="setColor('<%=i%>')";>♥</button></td>            
+                    </tr>
+                <%i++;
+                });%>
         </tbody>
     </table>
-</div>
-<div id="div3">
-    <ul>
-        <li>
-            <form action="/mainchart1.ejs" method="GET">
-                <button type="submit">1~30</button>
-            </form>
-    </li>
-    <li>
-        <form action="/mainchart2.ejs" method="GET">
-            <button type="submit">31~60</button>
-        </form>
-    </li>
-    <li>
-        <form action="/mainchart3.ejs" method="GET">
-            <button type="submit">61~90</button>
-        </form>
-    </li>
-    <li>
-        <form action="/mainchart4.ejs" method="GET">
-            <button type="submit">90~</button>
-        </form>
-    </li>
-</ul>
 </div>
 </body>
 </html>
