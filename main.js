@@ -196,6 +196,7 @@ app.get('/geniechart.ejs', (req, res) => {
 });
 
 app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 app.get('/site.html',function(req,res){
     res.sendFile(__dirname + "/site.html");
 });
