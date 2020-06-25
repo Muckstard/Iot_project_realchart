@@ -4,138 +4,145 @@
     <title>종합 음원 차트</title>
     <style>
         * {
-            font-family: "Trebuchet MS", "맑은 고딕", Arial;
-            padding: 0px;
-            margin: 0px;
-        }
-        #div2 {
-            background-color: white;
-            width: 100%;
-            height: 10%;
-            position: fixed;
-        }
-        h1 {
-            padding: 15px;
-            text-align: center;
-        }
-        #topMenu {
-            position: fixed;
-            display: inline-block;
-            height: 50px;
-            width: 100%;
-            background-color: #2d2d2d;
-        }
-        #topMenu ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        #topMenu ul li {
-            display: inline-block;
-            padding: 0;
-            list-style: none;
-            color: white;
-            line-height: 50px;          
-        }
-        #topMenu .menuLink {
-            text-decoration: none;
-            color: white;
-            display: block;
-            width: 150px;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        #topMenu .menuLink:hover {
-            color: #dd7777;
-            background-color: #4d4d4d;
-        }
-        h3 {
-            position: absolute;
-            top: 20%;
-            left: 10%;
-            z-index: -1;
-        }
-        #div1 {
-            padding: 30px 10%;
-        }
-        .table1 {
-            border-collapse: collapse;
-            text-align: left;
-            line-height: 1.5;
-            border-top: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
-            margin: 160px 0px 0px 0px;
-        }
-        .table_menu {
-            background-color: #dd7777;
-            color: white;
-        }
-        .table1 th {
-            padding: 10px;
-            font-weight: bold;
-            vertical-align: center;
-            text-align: center;
-        }
-        .table1 td {
-            padding: 10px;
-            vertical-align: center;
-            text-align: center;
-        }
-        .table1 .even {
-            background: #efefef;
-        }
-        .rank_list {
-            width:10px;
-        }
-        #div3 {
-            position: relative;
-            height: 20%;
-            padding: 0px 0px 5% 0px;
-        }
+    font-family: "Trebuchet MS", "맑은 고딕", Arial;
+    padding: 0px;
+    margin: 0px;
+}
+#div2 {
+    background-color: white;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+}
+h1 {
+    padding: 15px;
+    text-align: center;
+}
+#topMenu {
+    position: fixed;
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    background-color: #2d2d2d;
+}
+#topMenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#topMenu ul li {
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+    color: white;
+    line-height: 50px;          
+}
+#topMenu .menuLink {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#topMenu .menuLink:hover {
+    color: #dd7777;
+    background-color: #4d4d4d;
+}
+#div1 {
+    padding: 30px 10%;
+}
+.table1 {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 160px 0px 0px 0px;
+}
+.table_menu {
+    background-color: #dd7777;
+    color: white;
+}
+.table1 th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: center;
+    text-align: center;
+}
+.table1 td {
+    padding: 10px;
+    vertical-align: center;
+    text-align: center;
+}
+.table1 .even {
+    background: #efefef;
+}
+.rank_list {
+    width:10px;
+}
+#div3 {
+    position: relative;
+    height: 20%;
+    padding: 0px 0px 5% 0px;
+}
 
-        #div3 ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        #div3 ul li {
-            display: inline-block;
-            margin: 10px;
-            padding: 0;
-            list-style: none;
-        }
-        #div3 button {
-            padding: 5px;
-        }
-        #rank_chart button {
-            padding: 5px;
-        }
-        #rank_chart tr:nth-child(even) {
-            background: #fabfbf;
-        }
-        #rank_chart a {
-            transition: all 0.5s ease;
-        }
-        a:link {
-            text-decoration: none;
-            color: #000000;
-        }
-        a:visited {
-            text-decoration: none;
-            color: #000000;
-        }
-        a:active {
-            text-decoration: none;
-            color: #000000;
-        }
-        a:hover {
-            text-decoration: none;
-            color: skyblue;
-            font-size: 130%;
-        }
+#div3 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#div3 ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+}
+#div3 button {
+    padding: 5px;
+}
+#rank_chart button {
+    padding: 5px;
+}
+#rank_chart tr:nth-child(even) {
+    background: #fabfbf;
+}
+#rank_chart a {
+    transition: all 0.5s ease;
+}
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+a:active {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    text-decoration: none;
+    color: green;
+    font-size: 130%;
+    font-weight: bold;
+}
+#search {
+    float: right;
+    margin: 20px 10% 0 0;
+}
+#name {
+    box-sizing: border-box;
+    color:black;
+}
+#OK {
+    box-sizing: border-box;
+}
     </style>
+    <script src="http://code.jquery.com/jquery-1.10.1.js"> </script>
     <script>
         var count = Array.from({length: 200}, () => 0); 
         function setColor(i) {
@@ -161,11 +168,35 @@
             <li><a class="menuLink" href="geniechart.ejs">Genie</a></li>
             <li><a class="menuLink" href="site.html">Site</a></li>
         </ul>
+        <div id="search">
+            <input type="text" id="name" />
+            <input type="submit" id="OK" value="검색"/>
+        </div>
+        <script>
+            $("#OK").click(function(){      // OK 버튼 클릭하면
+                $.ajax({
+                    url: '/chartsearch.ejs',       // postTest 주소로
+                    async: true,            // 동기화 - 서버에서 반응이 올때까지 기다림
+                    type: 'POST',           // POST 방식으로
+                    data: {
+                        test: $("#name").val()  // 텍스트필드에 입력한 값을 test라는 이름으로 보냄
+                    },
+                    dataType: 'json',
+                    success: function(data) {   // POST 요청 성공 시
+                        window.location.href = "chartsearch.ejs";
+                    },
+                    error: function(err) {      // POST 요청 실패 시
+                        alert("검색어를 다시 입력해 주세요." + err);
+                    }
+                }); 
+            });
+        </script>
     </div>
 </div>
+
     <div id='div1'>
         <table class='table1'>
-            <caption>Real Chart</caption>
+            <caption><h1>Real Chart</h1></caption>
         <tr class='table_menu'>
             <th width="50px">순위</th>
             <th width="100px">점수</th>
@@ -184,7 +215,7 @@
                         <td><a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=<%= item.title %> <%= item.singer %>"
                             target="_blank"><%= item.title %></a></td>
                         <td><a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=<%= item.singer %>"
-                            target="_blank"><%= item.singer %></a></td>
+                            target="_blank" id="<%= item.singer %>"><%= item.singer %></a></td>
                         <td><%= item.album %></td>
                         <td><button class="btn" onclick="setColor('<%=i%>')";>♥</button></td>            
                     </tr>
