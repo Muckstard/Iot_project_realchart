@@ -23,6 +23,8 @@ async function getHTML() {
 var titleList = [];
 var fs = require('fs');
 const { connect } = require("http2");
+
+//셀렉터를 이용해 웹페이지 크롤링
 getHTML()
   .then(html => {
     

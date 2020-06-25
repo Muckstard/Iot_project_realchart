@@ -8,6 +8,7 @@ var connection = mysql.createConnection({
     database:'realchart',
     insecureAuth: true
   });
+//DB에 저장된 데이터 불러와서 배열에 저장
 var melonsql = 'select * from realchart.melon;';
 var geniesql = 'select * from realchart.genie;';
 var data_melon = [];
@@ -15,7 +16,6 @@ var data_genie = [];
 var data = [];
 var  r = 0;
 connection.connect();
-    //DB에 저장된 데이터 불러와서 배열에 저장
     connection.query(melonsql,function(err,rows,fields) {
         if(err) 
           console.log(err);

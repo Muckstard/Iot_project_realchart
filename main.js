@@ -12,7 +12,7 @@ var text = "";
 // pm2 start main.js --watch --ignore-watch="data/* sessions/*"  --no-daemon
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-
+//DB 연결
 var connection = mysql.createConnection({
   host    :'203.234.62.143',
   port : 3306,
@@ -22,9 +22,11 @@ var connection = mysql.createConnection({
   insecureAuth: true
 });
 connection.connect();
+//http server
 http.createServer(app).listen(8000,function(){
   console.log('Server running at http://localhost:8000');
 })
+//get을 이용해 DB에 쿼리문을 날려 데이터를 가져온다.
 app.get('/', (req, res) => {
     fs.readFile('mainchart1.ejs','utf8',function(err,data) {
       if(err) {
@@ -66,6 +68,7 @@ app.get('/mainchart1.ejs', (req, res) => {
     }
     })
 });
+//post 형식으로 입력된 검색을 가져와 저장
 app.post("/chartsearch.ejs", function(req, res) {
     text = req.body.test;
     res.json({ok:true});
