@@ -11,7 +11,7 @@
     "html": "^1.0.0",
     "http": "^0.0.1-security",
     "mysql": "^2.18.1",
-    "pm2": "^4.4.0"
+    "pm2": "^5.2.0"
   },
   "devDependencies": {},
   "scripts": {
